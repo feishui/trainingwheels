@@ -6,7 +6,6 @@ import redis
 import socket
 
 
-
 app = Flask(__name__)
 hostname = socket.gethostname()
 redis = redis.Redis("redis")
@@ -41,4 +40,3 @@ def assets(path):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
-
